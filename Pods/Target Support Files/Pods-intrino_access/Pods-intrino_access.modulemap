@@ -1,0 +1,6 @@
+framework module Pods_intrino_access {
+  umbrella header "Pods-intrino_access-umbrella.h"
+
+  export *
+  module * { export * }
+}
