@@ -13,9 +13,12 @@
 		6FB7634B23B882DF002578CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7634923B882DF002578CF /* Main.storyboard */; };
 		6FB7634D23B882E0002578CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7634C23B882E0002578CF /* Assets.xcassets */; };
 		6FB7635023B882E0002578CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB7634E23B882E0002578CF /* LaunchScreen.storyboard */; };
+		DA6B85826130CBC82892E251 /* Pods_intrino_access.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545361C157A79F4FEEA9C866 /* Pods_intrino_access.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3299A3230859873E6D753671 /* Pods-intrino_access.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intrino_access.release.xcconfig"; path = "Target Support Files/Pods-intrino_access/Pods-intrino_access.release.xcconfig"; sourceTree = "<group>"; };
+		545361C157A79F4FEEA9C866 /* Pods_intrino_access.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intrino_access.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB7634023B882DF002578CF /* intrino_access.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intrino_access.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB7634323B882DF002578CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FB7634523B882DF002578CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		6FB7634C23B882E0002578CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FB7634F23B882E0002578CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FB7635123B882E0002578CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C85A3AE875996CA1399E5237 /* Pods-intrino_access.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intrino_access.debug.xcconfig"; path = "Target Support Files/Pods-intrino_access/Pods-intrino_access.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6B85826130CBC82892E251 /* Pods_intrino_access.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0213F9A4448E98D134232DF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C85A3AE875996CA1399E5237 /* Pods-intrino_access.debug.xcconfig */,
+				3299A3230859873E6D753671 /* Pods-intrino_access.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6FB7633723B882DF002578CF = {
 			isa = PBXGroup;
 			children = (
 				6FB7634223B882DF002578CF /* intrino_access */,
 				6FB7634123B882DF002578CF /* Products */,
+				0213F9A4448E98D134232DF8 /* Pods */,
+				88321FF1514322F1AA2E7F63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = intrino_access;
 			sourceTree = "<group>";
 		};
+		88321FF1514322F1AA2E7F63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545361C157A79F4FEEA9C866 /* Pods_intrino_access.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FB7635423B882E0002578CF /* Build configuration list for PBXNativeTarget "intrino_access" */;
 			buildPhases = (
+				A6DB0A95C64A4B8B44E39673 /* [CP] Check Pods Manifest.lock */,
 				6FB7633C23B882DF002578CF /* Sources */,
 				6FB7633D23B882DF002578CF /* Frameworks */,
 				6FB7633E23B882DF002578CF /* Resources */,
+				6226660D50B7B7E508DF5D85 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6226660D50B7B7E508DF5D85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-intrino_access/Pods-intrino_access-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-intrino_access/Pods-intrino_access-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-intrino_access/Pods-intrino_access-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6DB0A95C64A4B8B44E39673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-intrino_access-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FB7633C23B882DF002578CF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		6FB7635523B882E0002578CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C85A3AE875996CA1399E5237 /* Pods-intrino_access.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		6FB7635623B882E0002578CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3299A3230859873E6D753671 /* Pods-intrino_access.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

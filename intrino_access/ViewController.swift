@@ -7,13 +7,28 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
+    
+    // constants
+    
+    let intrino_url = "https://api-v2.intrinio.com/companies/AAPL?api_key=Ojk3ZjM1OTE3NTlhZjdiOTgwNTk4MzU2YTIxMzc3OGVi"
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        Alamofire.request(intrino_url).response {
+            response in debugPrint(response)
+        }
+        
     }
+    
+    // Networking Call
+
 
 
 }
